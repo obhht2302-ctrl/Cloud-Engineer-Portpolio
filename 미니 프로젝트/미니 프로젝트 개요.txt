@@ -1,0 +1,8 @@
+미니 프로젝트
+
+“주간 상태 리포트 자동화” – 한 장의 텍스트 리포트를 만드는 스크립트
+요약: uptime, df -h, free -h, systemctl is-active nginx, 상위 CPU/메모리 프로세스 5개, ss -lntp | head를 한 번에 모아 report.txt로 저장 → cron으로 일 1회 기록 → Git에 포함.
+
+기대 효과: 리눅스/네트워크/서비스/cron 핵심을 한 번 더 통합 복습
+
+산출물: scripts/status_report.sh, docs/sample_report.txt, crontab -l 캡처

@@ -1,0 +1,94 @@
+System Weekly Status Report
+Generated: Mon, 29 Sep 2025 17:40:04 +0900
+Host: ~
+Local IP(s): ~
+Public IP: ~
+
+===== Uptime & Load =====
+ 17:40:06 up  1:12,  1 user,  load average: 0.02, 0.01, 0.00
+
+===== Disk Usage (df -h) =====
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.8G     0  1.8G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            1.8G  4.0K  1.8G   1% /mnt/wsl
+drivers         233G  206G   28G  89% /usr/lib/wsl/drivers
+/dev/sdd       1007G  1.9G  954G   1% /
+none            1.8G   76K  1.8G   1% /mnt/wslg
+none            1.8G     0  1.8G   0% /usr/lib/wsl/lib
+rootfs          1.8G  2.7M  1.8G   1% /init
+none            1.8G  516K  1.8G   1% /run
+none            1.8G     0  1.8G   0% /run/lock
+none            1.8G     0  1.8G   0% /run/shm
+none            1.8G   96K  1.8G   1% /mnt/wslg/versions.txt
+none            1.8G   96K  1.8G   1% /mnt/wslg/doc
+C:\             233G  206G   28G  89% /mnt/c
+D:\             5.0G  3.3G  1.8G  66% /mnt/d
+tmpfs           362M   20K  362M   1% /run/user/1000
+
+===== Memory (free -h) =====
+               total        used        free      shared  buff/cache   available
+Mem:           3.5Gi       419Mi       3.0Gi       3.5Mi       185Mi       3.1Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+===== Service Status (systemctl is-active) =====
+nginx: active
+
+===== Listening TCP Ports (ss -lntp | head) =====
+State  Recv-Q Send-Q  Local Address:Port Peer Address:PortProcess
+LISTEN 0      1000   10.255.255.254:53        0.0.0.0:*          
+LISTEN 0      4096       127.0.0.54:53        0.0.0.0:*          
+LISTEN 0      511           0.0.0.0:80        0.0.0.0:*          
+LISTEN 0      4096    127.0.0.53%lo:53        0.0.0.0:*          
+LISTEN 0      511              [::]:80           [::]:*          
+
+===== Top 5 Processes by CPU =====
+    PID    PPID COMMAND         %CPU %MEM
+   1082     483 bash             0.5  0.0
+      7       2 init             0.4  0.0
+      1       0 systemd          0.0  0.3
+    153       1 systemd-udevd    0.0  0.1
+    107       1 systemd-journal  0.0  0.4
+
+===== Top 5 Processes by MEM =====
+    PID    PPID COMMAND         %CPU %MEM
+    273       1 unattended-upgr  0.0  0.6
+    107       1 systemd-journal  0.0  0.4
+    211       1 systemd-resolve  0.0  0.3
+    232       1 wsl-pro-service  0.0  0.3
+      1       0 systemd          0.0  0.3
+
+===== Recent Service Logs (journalctl -u <svc> -n 50) =====
+--- nginx ---
+Sep 24 18:33:22 DESKTOP-71AEVSG systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Sep 24 18:33:22 DESKTOP-71AEVSG systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+Sep 24 18:39:39 DESKTOP-71AEVSG systemd[1]: Stopping nginx.service - A high performance web server and a reverse proxy server...
+Sep 24 18:39:39 DESKTOP-71AEVSG systemd[1]: nginx.service: Deactivated successfully.
+Sep 24 18:39:39 DESKTOP-71AEVSG systemd[1]: Stopped nginx.service - A high performance web server and a reverse proxy server.
+Sep 24 18:40:08 DESKTOP-71AEVSG systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Sep 24 18:40:08 DESKTOP-71AEVSG systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+Sep 24 20:05:43 DESKTOP-71AEVSG systemd[1]: Stopping nginx.service - A high performance web server and a reverse proxy server...
+Sep 24 20:05:43 DESKTOP-71AEVSG systemd[1]: nginx.service: Deactivated successfully.
+Sep 24 20:05:43 DESKTOP-71AEVSG systemd[1]: Stopped nginx.service - A high performance web server and a reverse proxy server.
+-- Boot a80e9a404281470b8db0cd3227180bd0 --
+Sep 26 18:59:26 DESKTOP-71AEVSG systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Sep 26 18:59:26 DESKTOP-71AEVSG systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+Sep 26 20:39:10 DESKTOP-71AEVSG systemd[1]: Stopping nginx.service - A high performance web server and a reverse proxy server...
+Sep 26 20:39:10 DESKTOP-71AEVSG systemd[1]: nginx.service: Deactivated successfully.
+Sep 26 20:39:10 DESKTOP-71AEVSG systemd[1]: Stopped nginx.service - A high performance web server and a reverse proxy server.
+Sep 26 22:23:08 DESKTOP-71AEVSG systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Sep 26 22:23:08 DESKTOP-71AEVSG systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+-- Boot 6a5aae2f20504ababe39ecbcbc3b55eb --
+Sep 27 16:33:19 DESKTOP-71AEVSG systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Sep 27 16:33:19 DESKTOP-71AEVSG systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+Sep 27 19:52:01 DESKTOP-71AEVSG systemd[1]: Stopping nginx.service - A high performance web server and a reverse proxy server...
+Sep 27 19:52:01 DESKTOP-71AEVSG systemd[1]: nginx.service: Deactivated successfully.
+Sep 27 19:52:01 DESKTOP-71AEVSG systemd[1]: Stopped nginx.service - A high performance web server and a reverse proxy server.
+-- Boot 9a2b3d5aa6964783b43fd5fa0035486c --
+Sep 29 13:57:47 DESKTOP-71AEVSG systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Sep 29 13:57:47 DESKTOP-71AEVSG systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+Sep 29 15:11:45 DESKTOP-71AEVSG systemd[1]: nginx.service: Deactivated successfully.
+Sep 29 15:14:54 DESKTOP-71AEVSG systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Sep 29 15:14:54 DESKTOP-71AEVSG systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+-- Boot e44c66b9166d4cec9cda058fb36a2ea0 --
+Sep 29 16:38:43 DESKTOP-71AEVSG systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Sep 29 16:38:43 DESKTOP-71AEVSG systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
