@@ -10,7 +10,6 @@ AWS 기반으로 **EC2, S3, IAM, 네트워크, CI/CD, Docker** 등을 학습하�
 ---
 
 ## 🧭 About Me
-
 - 🎯 **목표:** 2026년까지 클라우드 엔지니어로 이직  
 - 💻 **현재:** AWS + Linux + Docker + CI/CD 학습 로드맵 진행 중  
 - 🧠 **관심 분야:** 클라우드 인프라, DevOps, 네트워크, 자동화, 데이터 시스템  
@@ -19,25 +18,24 @@ AWS 기반으로 **EC2, S3, IAM, 네트워크, CI/CD, Docker** 등을 학습하�
 ---
 
 ## ⚙️ Tech Stack
-
 | 분야 | 기술 |
 |------|------|
-| ☁️ **Cloud** | AWS (EC2, S3, IAM, CloudFront, Route53) |
+| ☁️ **Cloud** | AWS (EC2, S3, RDS, IAM, CloudFront, Route53) |
 | 💻 **Infra & OS** | Linux (Ubuntu), Shell Script, Systemd |
 | 🔁 **Automation** | Crontab, Bash, Terraform(학습 중) |
 | 🧰 **DevOps Tools** | Git, GitHub Actions, Docker |
 | 🌐 **Networking** | OSI 7계층, TCP/IP, DNS, NAT/PAT, VLAN |
-| 🐍 **Languages** | Python (기초 스크립팅), Bash |
+| 🐍 **Languages** | Python (Flask, PyMySQL), Bash |
 
 ---
 
 ## 📚 Bootcamp Learning Roadmap
-
 | 주차 | 주제 | 주요 실습 내용 |
 |------|------|----------------|
 | **1주차** | AWS EC2 & Linux | EC2 생성, SSH 접속, Git 연동, Shell Script, Crontab 자동화 |
 | **2주차** | Web Server 구축 | Nginx + Apache 포트 분리, 가상호스트 구성, 로그 관리 |
 | **3주차** | S3 + EC2 연동 | 정적 웹사이트 호스팅, S3 버킷 배포, CLI 자동화 |
+| **4주차** | RDS + EC2 + Flask | Flask CRUD 앱 구축, RDS 연동, systemd 자동화, 보안 설정 |
 | **다음 단계** | CI/CD + Docker | 파이프라인 자동화 및 컨테이너 환경 구성 예정 |
 
 ---
@@ -48,16 +46,24 @@ AWS 기반으로 **EC2, S3, IAM, 네트워크, CI/CD, Docker** 등을 학습하�
 > Linux 기본 명령어, 사용자 관리, 서비스 제어, 자동화 스크립트  
 > EC2 서버에서 시스템 상태 리포트를 자동화하는 Shell Script 구현
 
+---
+
 ### [🧭 Week 2 – Web Server 구축](https://github.com/obhht2302-ctrl/cloud-week2-nginx-apache)
 > Nginx와 Apache 포트 분리, 가상호스트 구성, 로그 분석 및 보안 강화
+
+---
 
 ### [🚀 Week 3 – S3 자동 배포](https://github.com/obhht2302-ctrl/cloud-week3-s3-deploy)
 > S3 버킷 정적 웹사이트 배포, EC2 ↔ S3 CLI 자동화, 버전 관리 및 캐시 무효화
 
 ---
 
-## 🎯 현재 목표
+### [🧱 Week 4 – RDS + EC2 + Flask CRUD](https://github.com/obhht2302-ctrl/cloud-week4-flask-rds)
+> AWS RDS(MySQL)와 EC2(Flask)를 연동한 클라우드 백엔드 실습 프로젝트  
 
+---
+
+## 🎯 현재 목표
 - AWS Certified Solutions Architect – Associate 자격증 준비 🎓  
 - Terraform & Docker로 IaC 및 CI/CD 자동화 실습  
 - GitHub Actions를 통한 개인 포트폴리오 자동 배포 구축  
@@ -65,7 +71,7 @@ AWS 기반으로 **EC2, S3, IAM, 네트워크, CI/CD, Docker** 등을 학습하�
 ---
 
 ## 💬 Contact
-- 📧 **이메일:** obhml@naver.com
+- 📧 **이메일:** obhml@naver.com  
 - 🌐 **GitHub:** [github.com/obhht2302-ctrl](https://github.com/obhht2302-ctrl)  
 - 🧑‍💻 **Blog (예정):** 클라우드 학습 정리 블로그 개설 예정  
 
