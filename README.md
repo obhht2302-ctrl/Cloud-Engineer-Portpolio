@@ -20,11 +20,11 @@ AWS 기반으로 **EC2, S3, IAM, 네트워크, CI/CD, Docker** 등을 학습하�
 ## ⚙️ Tech Stack
 | 분야 | 기술 |
 |------|------|
-| ☁️ **Cloud** | AWS (EC2, S3, RDS, IAM, CloudFront, Route53) |
-| 💻 **Infra & OS** | Linux (Ubuntu), Shell Script, Systemd |
-| 🔁 **Automation** | Crontab, Bash, Terraform(학습 중) |
+| ☁️ **Cloud** | AWS (EC2, S3, RDS, IAM, CloudFront, Route53, VPC, NATGW) |
+| 💻 **Infra & OS** | Linux (Ubuntu, Amazon Linux), Shell Script, Systemd |
+| 🔁 **Automation** | Crontab, Bash, Terraform(학습 중), AWS CLI |
 | 🧰 **DevOps Tools** | Git, GitHub Actions, Docker |
-| 🌐 **Networking** | OSI 7계층, TCP/IP, DNS, NAT/PAT, VLAN |
+| 🌐 **Networking** | OSI 7계층, VPC, Subnet, Routing, SG, NAT |
 | 🐍 **Languages** | Python (Flask, PyMySQL), Bash |
 
 ---
@@ -36,6 +36,8 @@ AWS 기반으로 **EC2, S3, IAM, 네트워크, CI/CD, Docker** 등을 학습하�
 | **2주차** | Web Server 구축 | Nginx + Apache 포트 분리, 가상호스트 구성, 로그 관리 |
 | **3주차** | S3 + EC2 연동 | 정적 웹사이트 호스팅, S3 버킷 배포, CLI 자동화 |
 | **4주차** | RDS + EC2 + Flask | Flask CRUD 앱 구축, RDS 연동, systemd 자동화, 보안 설정 |
+| **5주차** | IAM Identity 관리 | User/Group/Role/Policy, MFA, CloudTrail, CLI/Terraform 자동화 |
+| **6주차** | VPC 네트워크 설계 | Public/Private Subnet, IGW/NATGW, Route Tables, 3-tier SG 구성 |
 | **다음 단계** | CI/CD + Docker | 파이프라인 자동화 및 컨테이너 환경 구성 예정 |
 
 ---
@@ -60,6 +62,22 @@ AWS 기반으로 **EC2, S3, IAM, 네트워크, CI/CD, Docker** 등을 학습하�
 
 ### [🧱 Week 4 – RDS + EC2 + Flask CRUD](https://github.com/obhht2302-ctrl/cloud-week4-flask-rds)
 > AWS RDS(MySQL)와 EC2(Flask)를 연동한 클라우드 백엔드 실습 프로젝트  
+
+---
+
+### [🔐 Week 5 – AWS IAM Identity & Access Management](https://github.com/obhht2302-ctrl/cloud-week5-iam)
+> User / Group / Role / Policy 기반 IAM 구조 설계  
+> MFA 및 CloudTrail로 보안 강화  
+> AWS CLI & Terraform으로 IAM 자동화 구축  
+> 실무형 IAM 운영 능력 강화
+
+---
+
+### [🌐 Week 6 – AWS VPC 3-Tier Architecture](https://github.com/obhht2302-ctrl/cloud-week6-vpc)
+> VPC, Subnet, IGW/NATGW를 이용해 퍼블릭/프라이빗 네트워크 구성  
+> Web-App-DB 3계층 아키텍처 구축  
+> Security Group 단방향 설계(Web → App → DB)  
+> 아키텍처 다이어그램 및 문서화, GitHub 업로드 완료
 
 ---
 
